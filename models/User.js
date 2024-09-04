@@ -11,7 +11,6 @@ const userSchema = new mongoose.Schema({
     role: { type: String, default: 'user' }
 });
 
-// Encriptar la contraseña antes de guardar
 userSchema.pre('save', function(next) {
     if (!this.isModified('password')) return next();
     this.password = bcrypt.hashSync(this.password, 10);
