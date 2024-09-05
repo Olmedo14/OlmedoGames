@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OlmedoGames</title>
+    <link rel="shortcut icon" href="./assets/Logo OG png.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark custom-bg-black">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Logo OG png.png" alt="Logo de la Pagina">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Todos los productos</a>
+                            <a class="dropdown-item" href="#">Productos</a>
+                            <a class="dropdown-item" href="#">Suscripciones</a>
+                            <a class="dropdown-item" href="#">Ofertas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/dudas.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/favoritos.html">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="cart-sesion">
+                    <a href="./pages/iniciosesion.html"><img src="./assets/iniciosesion.png" alt="Icono de Inicio de Sesion"></a>
+                    <a href="./pages/carrito.html"><img src="./assets/carrito.jpg" alt="Icono de Carrito de Compras"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carrusel">
+            <div class="diapositiva activa">
+              <img src="./assets/banner-1.jpg" alt="Imagen 1">
+              <div class="overlay">
+                <p>Tus Juegos Favoritos</p>
+                <a href="URL_a_donde_quieres_redirigir" target="_blank">
+                  <button class="boton-banner">Ver Juegos</button>
+                </a>
+              </div>
+            </div>
+            <div class="diapositiva">
+              <img src="./assets/banner-2.jfif" alt="Imagen 2">
+              <div class="overlay">
+                <p>Las Mejores Ofertas</p>
+                <a href="URL_a_donde_quieres_redirigir" target="_blank">
+                  <button class="boton-banner">Ver Juegos</button>
+                </a>
+              </div>
+            </div>
+            <div class="diapositiva">
+              <img src="./assets/banner-3.jpg" alt="Imagen 3">
+              <div class="overlay">
+                <p>Tus Plataformas Favoritas</p>
+                <a href="URL_a_donde_quieres_redirigir" target="_blank">
+                  <button class="boton-banner">Ver Juegos</button>
+                </a>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./javascript/inicio.js"></script>
 </body>
 </html>

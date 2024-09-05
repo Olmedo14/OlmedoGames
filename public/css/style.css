@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Montseeat";
+    src: url("../assets/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/Roboto/Roboto-Medium.ttf");
+}
+
+/* Encabezado */
+.custom-bg-black {
+    background-color: #000000 !important; /* Fondo negro puro */
+    border-radius: px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-collapse {
+    flex-grow: 1;
+    justify-content: center;
+}
+.navbar-nav {
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    transition: color 0.5s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(248, 202, 51);
+}
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navbar-brand img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.cart-sesion {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.cart-sesion img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.cart-sesion img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* BANNERS */
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+  
+.carrusel .diapositiva {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carrusel .diapositiva img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.carrusel .activa {
+    display: block;
+}
+
+.carrusel .overlay {
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* TEXTO Y OPACIDAD DE LOS BANNERS */
+
+.overlay {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay p{
+    margin-bottom: -5px;
+}
+
+/* BOTON DE LOS BANNERS */
+
+.boton-banner {
+    margin-top: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgb(248, 202, 51);
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.boton-banner:hover {
+    background-color: rgb(248, 202, 51);
+    color: #000000;
+}
