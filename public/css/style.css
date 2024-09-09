@@ -8,7 +8,10 @@
     src: url("../assets/Roboto/Roboto-Medium.ttf");
 }
 
-/* Encabezado */
+body{
+    background-color: #000000;
+}
+
 .custom-bg-black {
     background-color: #000000 !important; /* Fondo negro puro */
     border-radius: px;
@@ -26,14 +29,14 @@
 .navbar-nav {
     justify-content: center;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: white;
     transition: color 0.5s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover {
     color: rgb(248, 202, 51);
 }
 .navbar-brand img {
@@ -42,9 +45,22 @@
     margin-top: 10px;
     margin-left: 10px;
 }
-.navbar-brand img:hover{
+.navbar-brand img:hover {
     transform: scale(1.1);
     transition: transform 0.3s;
+}
+
+/* Estilos personalizados para el menú desplegable */
+.navbar .dropdown-menu {
+    background-color: black;
+}
+.navbar .dropdown-menu .dropdown-item {
+    color: white;
+    background-color: black; /* Asegura que el fondo permanezca negro */
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+    color: rgb(248, 202, 51);
+    background-color: black; /* Mantiene el fondo negro al pasar el cursor */
 }
 .cart-sesion {
     display: flex;
@@ -142,4 +158,56 @@
 .boton-banner:hover {
     background-color: rgb(248, 202, 51);
     color: #000000;
+}
+
+/* BARRA PROGRESO */
+
+.barra-progreso {
+    display: flex;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 65px;
+}
+  
+.seccion {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(248, 202, 51);
+    border-right: 2px solid #000000;
+}
+  
+.seccion:last-child {
+    border-right: none;
+}
+  
+.seccion img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 55px;
+    height: 55px;
+}
+  
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.titulo {
+    font-weight: bold;
+}
+  
+.subtitulo {
+    font-size: 0.9em;
+    color: #555;
+}
+  
+.completada {
+    background-color: rgb(248, 202, 51);
+}
+  
+.actual {
+    background-color: rgb(248, 202, 51);
 }
