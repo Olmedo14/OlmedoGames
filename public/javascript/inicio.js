@@ -9,3 +9,10 @@ setInterval(() => {
   
   diapositivas[diapositivaActual].classList.add('activa');
 }, 5000); // Cambia cada 3 segundos
+
+// Funcionalidad de la Lupa //
+
+document.getElementById('search-icon').addEventListener('click', function() {
+  var searchContainer = document.querySelector('.search-container');
+  searchContainer.classList.toggle('active');
+});

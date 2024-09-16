@@ -83,6 +83,28 @@ body{
     transition: transform 0.3s;
 }
 
+/* Estilos para la lupa de búsqueda */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 195px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+}
+
+.search-container.active .search-input {
+    display: block;
+}
+
 /* BANNERS */
 .carrusel {
     position: relative;
@@ -347,4 +369,80 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 23px;
+}
+
+/* SECCION PREGUNTAS FRECUENTES*/
+
+.faq-section {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background: rgb(248, 202, 51);
+    color: #000000;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: rgb(214, 173, 39);
+}
+
+.faq-answer {
+    color: white;
+    display: none;
+    padding: 10px;
+    background: #000000;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+/*-------*/
+/*ICONO DE WSP ABAJO A LA DERECHA*/
+/*-------*/
+
+
+.whatsapp-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img{
+    width: 60px;
+    height: 60px;
+    border-radius: 35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
