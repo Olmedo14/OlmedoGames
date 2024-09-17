@@ -21,28 +21,28 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Inicio</a>
+                      <a class="nav-link" href="../../index.html">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Productos
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Todos los productos</a>
-                          <a class="dropdown-item" href="#">Juegos Steam</a>
-                          <a class="dropdown-item" href="#">Suscripciones</a>
-                          <a class="dropdown-item" href="#">Ofertas</a>
+                          <a class="dropdown-item" href="./productos.html">Todos los productos</a>
+                          <a class="dropdown-item" href="./juegosteam.html">Juegos Steam</a>
+                          <a class="dropdown-item" href="./suscripciones.html">Suscripciones</a>
+                          <a class="dropdown-item" href="./productos.html">Ofertas</a>
                       </div>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./public/pages/dudas.html">Preguntas Frecuentes</a>
+                      <a class="nav-link" href="./dudas.html">Preguntas Frecuentes</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="./public/pages/contacto.html">Contacto</a>
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
               </ul>
               <div class="cart-sesion">
-                  <a href="../pages/iniciosesion.html"><img src="../assets/iniciosesion.png" alt="Icono de Inicio de Sesion"></a>
+                  <a href="#"><img src="../assets/iniciosesion.png" alt="Icono de Inicio de Sesion"></a>
                   <a href="../pages/carrito.html"><img src="../assets/carrito.jpg" alt="Icono de Carrito de Compras"></a>
                   <!-- Lupa para búsqueda -->
                   <div class="search-container">
@@ -57,7 +57,8 @@
     </header>
     <main>
         <div class="container-regis" data-aos="fade-down">
-            <div class="form-area-regis">
+            <!-- Formulario de Registro -->
+            <div class="form-area-regis" id="formularioRegistro">
                 <p class="titulo-regis-1">Registro</p>
                 <form action="">
                     <div class="form-group-regis">
@@ -74,15 +75,36 @@
                     </div>
                     <div>
                         <button class="boton-regis">Registrarse</button>
-                        <p class="text-iniciosesion">Ya tienes una cuenta? <a class="link-iniciosesion" href="">Inicia Sesión!</a></p><a class="link" href="">
-                    </a></div><a class="link-iniciosesion" href="">
-            </a></form></div><a class="link-iniciosesion" href="">
-        </a></div>
+                        <p class="text-iniciosesion">¿Ya tienes una cuenta? <a class="link-iniciosesion" href="#" id="linkIniciarSesion">Inicia Sesión!</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Formulario de Inicio de Sesión -->
+            <div class="form-area-regis" id="formularioInicioSesion" style="display: none;">
+                <p class="titulo-regis-1">Inicia Sesión</p>
+                <form action="">
+                    <div class="form-group-regis">
+                        <label class="titulos-regis" for="email">Email</label>
+                        <input placeholder="Ingresa tu Email" id="email" class="regis_style" type="email">
+                    </div>
+                    <div class="form-group-regis">
+                        <label class="titulos-regis" for="password">Contraseña</label>
+                        <input placeholder="Ingresa tu contraseña" id="password" class="regis_style" type="password">
+                    </div>
+                    <div>
+                        <button class="boton-regis">Iniciar Sesión</button>
+                        <p class="text-iniciosesion">¿Aún no tienes cuenta? <a class="link-iniciosesion" href="#" id="linkRegistro">Regístrate aquí!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
       </main>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="../javascript/registro-iniciosesion.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
