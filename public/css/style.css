@@ -446,3 +446,105 @@ body{
     transform: scale(1.1);
     transition: transform 0.3s;
 }
+
+/*-------*/
+/*APARTADO DE REGISTRO*/
+/*-------*/
+
+.container-regis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    padding: 20px; /* Asegurar un pequeño espacio interno */
+}
+
+.form-area-regis {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    max-width: 400px; /* Limitar el ancho máximo del formulario */
+    border-radius: 20px;
+    border: 1px solid #0f0f0f; /* Ajusta el color según sea necesario */
+    box-shadow: 0 0 13px rgba(0, 255, 255, 0.5), /* Resplandor cian */
+                0 0 23px rgba(0, 255, 255, 0.5), /* Resplandor cian */
+                inset 0 -1px #00ffff; /* Sombra interna inferior para profundidad */
+    padding: 20px;
+    background-color: #1a1a1a; /* Ajusta el color según sea necesario */
+}
+
+.titulo-regis-1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.titulos-regis {
+    margin: 5px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.form-group-regis {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.regis_style {
+    outline: none;
+    box-shadow: 3px 4px 0px 1px rgba(0, 255, 255, 0.5);
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family:'MontSerrat';
+    font-weight: 400;
+    margin-bottom: 10px; /* Añadir margen inferior */
+}
+
+.boton-regis:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s;
+}
+
+.boton-regis {
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    font-size: 15px;
+    background: #E91E63;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.text-iniciosesion {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.link-iniciosesion {
+    font-weight: 800;
+    color: rgb(248, 202, 51);
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.link-iniciosesion:hover{
+    color: rgba(0, 255, 255, 0.5);
+}
