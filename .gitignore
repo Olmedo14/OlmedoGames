@@ -1,1 +1,47 @@
+# Módulos de Node
 node_modules/
+
+# Variables de entorno
+.env
+
+# Archivos de registro
+logs
+*.log
+npm-debug.log*
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorio de cobertura utilizado por herramientas como Istanbul
+coverage/
+
+# Directorio de caché opcional de npm
+.npm
+
+# Caché opcional de eslint
+.eslintcache
+
+# Salida de 'npm pack'
+*.tgz
+
+# Archivo de integridad de Yarn
+.yarn-integrity
+
+# Archivos de sistema de Mac
+.DS_Store
+.DS_Store?
+
+# Directorios y archivos del editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Directorios de build / dist
+dist/
+build/
+
+# Directorios temporales
+tmp/
+temp/
